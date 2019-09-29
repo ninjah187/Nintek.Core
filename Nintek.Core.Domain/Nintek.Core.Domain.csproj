@@ -2,6 +2,10 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>Nintek.Core.Domain</PackageId>
+    <PackageVersion>0.1.0</PackageVersion>
+    <Authors>Karol Hinz</Authors>
+    <Description>DDD building blocks.</Description>
   </PropertyGroup>
 
 </Project>
