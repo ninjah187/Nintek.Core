@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>Nintek.Core.Domain.Common</PackageId>
+    <PackageVersion>0.1.0</PackageVersion>
+    <Authors>Karol Hinz</Authors>
+    <Description>Common DDD types.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Nintek.Core.Domain" Version="0.2.0" />
+  </ItemGroup>
+
+</Project>

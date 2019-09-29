@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nintek.Core.Tests", "Nintek
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nintek.Core.Domain", "Nintek.Core.Domain\Nintek.Core.Domain.csproj", "{7729FAFC-3178-476F-A07C-BB4DA6FCB1A5}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nintek.Core.Domain.Common", "Nintek.Core.Domain.Common\Nintek.Core.Domain.Common.csproj", "{FC67E86C-6531-4196-97D6-16082917D86C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{7729FAFC-3178-476F-A07C-BB4DA6FCB1A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7729FAFC-3178-476F-A07C-BB4DA6FCB1A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7729FAFC-3178-476F-A07C-BB4DA6FCB1A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC67E86C-6531-4196-97D6-16082917D86C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC67E86C-6531-4196-97D6-16082917D86C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC67E86C-6531-4196-97D6-16082917D86C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC67E86C-6531-4196-97D6-16082917D86C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
