@@ -6,7 +6,6 @@ mono: none
 dotnet: 2.0.0
 dist: trusty
 script:
-  - dotnet test Nintek.Core.Tests
   - dotnet pack --configuration Release Nintek.Core
 deploy:
   - provider: script
