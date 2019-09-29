@@ -1,5 +1,6 @@
 branches:
   - release/core
+  - release/domain
 language: csharp
 solution: Nintek.Core.sln
 mono: none
@@ -7,9 +8,15 @@ dotnet: 2.0.0
 dist: trusty
 script:
   - dotnet pack --configuration Release Nintek.Core
+  - dotnet pack --configuration Release Nintek.Core.Domain
 deploy:
   - provider: script
     skip_cleanup: true
     script: dotnet nuget push Nintek.Core/bin/Release/*.nupkg --api-key $NUGET_API_KEY --source https://www.nuget.org/api/v2/package
     on:
       branch: release/core
+  - provider: script
+    skip_cleanup: true
+    script: dotnet nuget push Nintek.Core.Domain/bin/Release/*.nupkg --api-key $NUGET_API_KEY --source https://www.nuget.org/api/v2/package
+    on:
+      branch: release/domain
