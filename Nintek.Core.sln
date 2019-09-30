@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29201.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nintek.Core", "Nintek.Core\Nintek.Core.csproj", "{0D9124FF-46AA-457A-9F11-79563E4FFA57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nintek.Core", "Nintek.Core\Nintek.Core.csproj", "{0D9124FF-46AA-457A-9F11-79563E4FFA57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nintek.Core.Tests", "Nintek.Core.Tests\Nintek.Core.Tests.csproj", "{8CF3E5C0-C08F-438F-9F9D-D7148E9C0AD6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nintek.Core.Tests", "Nintek.Core.Tests\Nintek.Core.Tests.csproj", "{8CF3E5C0-C08F-438F-9F9D-D7148E9C0AD6}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nintek.Core.Domain", "Nintek.Core.Domain\Nintek.Core.Domain.csproj", "{7729FAFC-3178-476F-A07C-BB4DA6FCB1A5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nintek.Core.Domain.Common", "Nintek.Core.Domain.Common\Nintek.Core.Domain.Common.csproj", "{FC67E86C-6531-4196-97D6-16082917D86C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nintek.Core.Events", "Nintek.Core.Events\Nintek.Core.Events.csproj", "{207D23C2-0456-420B-B046-7F50CAA3E5FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{FC67E86C-6531-4196-97D6-16082917D86C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC67E86C-6531-4196-97D6-16082917D86C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC67E86C-6531-4196-97D6-16082917D86C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{207D23C2-0456-420B-B046-7F50CAA3E5FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{207D23C2-0456-420B-B046-7F50CAA3E5FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{207D23C2-0456-420B-B046-7F50CAA3E5FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{207D23C2-0456-420B-B046-7F50CAA3E5FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
