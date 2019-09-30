@@ -3,6 +3,7 @@ branches:
   - release/domain
   - release/domain-common
   - release/events
+  - release/data
 language: csharp
 solution: Nintek.Core.sln
 mono: none
@@ -13,6 +14,7 @@ script:
   - if [ "$TRAVIS_BRANCH" = "release/domain" ]; then dotnet pack --configuration Release Nintek.Core.Domain; fi
   - if [ "$TRAVIS_BRANCH" = "release/domain-common" ]; then dotnet pack --configuration Release Nintek.Core.Domain.Common; fi
   - if [ "$TRAVIS_BRANCH" = "release/events" ]; then dotnet pack --configuration Release Nintek.Core.Events; fi
+  - if [ "$TRAVIS_BRANCH" = "release/data" ]; then dotnet pack --configuration Release Nintek.Core.Data; fi
 deploy:
   - provider: script
     skip_cleanup: true
