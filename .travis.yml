@@ -36,3 +36,8 @@ deploy:
     script: dotnet nuget push Nintek.Core.Events/bin/Release/*.nupkg --api-key $NUGET_API_KEY --source https://www.nuget.org/api/v2/package
     on:
       branch: release/events
+  - provider: script
+    skip_cleanup: true
+    script: dotnet nuget push Nintek.Core.Data/bin/Release/*.nupkg --api-key $NUGET_API_KEY --source https://www.nuget.org/api/v2/package
+    on:
+      branch: release/data
