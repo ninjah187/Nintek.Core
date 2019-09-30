@@ -8,8 +8,9 @@ namespace Nintek.Core.Data
 {
     public interface IUnitOfWork
     {
-        event Action<IUnitOfWork> Commited;
+        IDbConnector Connector { get; }
         IDbTransaction Transaction { get; }
         Task Commit();
+        event Action<IUnitOfWork> Commited;
     }
 }
