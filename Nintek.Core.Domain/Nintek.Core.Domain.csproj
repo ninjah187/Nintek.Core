@@ -8,4 +8,8 @@
     <Description>DDD building blocks.</Description>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Nintek.Core.Events" Version="0.1.0" />
+  </ItemGroup>
+
 </Project>
