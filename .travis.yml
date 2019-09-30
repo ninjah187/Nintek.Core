@@ -12,7 +12,7 @@ script:
   - if [ "$TRAVIS_BRANCH" = "release/core" ]; then dotnet pack --configuration Release Nintek.Core; fi
   - if [ "$TRAVIS_BRANCH" = "release/domain" ]; then dotnet pack --configuration Release Nintek.Core.Domain; fi
   - if [ "$TRAVIS_BRANCH" = "release/domain-common" ]; then dotnet pack --configuration Release Nintek.Core.Domain.Common; fi
-  - if [ "$TRAVIS_BRANCH" = "release/events" ] dotnet pack --configuration Release Nintek.Core.Events; fi
+  - if [ "$TRAVIS_BRANCH" = "release/events" ]; then dotnet pack --configuration Release Nintek.Core.Events; fi
 deploy:
   - provider: script
     skip_cleanup: true
