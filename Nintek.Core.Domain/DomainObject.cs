@@ -61,21 +61,19 @@ namespace Nintek.Core.Domain
             }
         }
 
-        IEnumerable<object> GetFlattenedEqualityMembers()
+        IEnumerable<object> GetFlattenedEqualityMembers() => FlattenCollection(GetEqualityMembers());
+
+        static IEnumerable<object> FlattenCollection(IEnumerable collection)
         {
-            foreach (var member in GetEqualityMembers())
+            foreach (var item in collection)
             {
-                if (!(member is IEnumerable collection))
+                if (item is IEnumerable nestedCollection)
                 {
-                    yield return member;
+                    yield return FlattenCollection(nestedCollection);
                 }
                 else
                 {
-                    // what about collection of collections? [][]?
-                    foreach (var collectionMember in collection)
-                    {
-                        yield return collectionMember;
-                    }
+                    yield return item;
                 }
             }
         }
