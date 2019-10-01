@@ -8,6 +8,7 @@ namespace Nintek.Core.Data
 {
     public interface IDbConnector
     {
+        event Action<IDbConnection> Connected;
         Task<IDbConnection> Connect();
     }
 }
