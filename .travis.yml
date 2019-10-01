@@ -4,6 +4,7 @@ branches:
   - release/domain-common
   - release/events
   - release/data
+  - release/data-dapper
   - release/data-npgsql
 language: csharp
 solution: Nintek.Core.sln
@@ -16,6 +17,7 @@ script:
   - if [ "$TRAVIS_BRANCH" = "release/domain-common" ]; then dotnet pack --configuration Release Nintek.Core.Domain.Common; fi
   - if [ "$TRAVIS_BRANCH" = "release/events" ]; then dotnet pack --configuration Release Nintek.Core.Events; fi
   - if [ "$TRAVIS_BRANCH" = "release/data" ]; then dotnet pack --configuration Release Nintek.Core.Data; fi
+  - if [ "$TRAVIS_BRANCH" = "release/data-dapper" ]; then dotnet pack --configuration Release Nintek.Core.Data.Dapper; fi
   - if [ "$TRAVIS_BRANCH" = "release/data-npgsql" ]; then dotnet pack --configuration Release Nintek.Core.Data.Npgsql; fi
 deploy:
   - provider: script
@@ -43,6 +45,11 @@ deploy:
     script: dotnet nuget push Nintek.Core.Data/bin/Release/*.nupkg --api-key $NUGET_API_KEY --source https://www.nuget.org/api/v2/package
     on:
       branch: release/data
+  - provider: script
+    skip_cleanup: true
+    script: dotnet nuget push Nintek.Core.Data.Dapper/bin/Release/*.nupkg --api-key $NUGET_API_KEY --source https://www.nuget.org/api/v2/package
+    on:
+      branch: release/data-dapper
   - provider: script
     skip_cleanup: true
     script: dotnet nuget push Nintek.Core.Data.Npgsql/bin/Release/*.nupkg --api-key $NUGET_API_KEY --source https://www.nuget.org/api/v2/package
