@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>Nintek.Core.Data.Npgsql</PackageId>
+    <PackageVersion>0.1.0</PackageVersion>
+    <Authors>Karol Hinz</Authors>
+    <Description>C# building blocks for Domain Driven Design applications. PostgreSQL building blocks.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Nintek.Core.Data" Version="0.3.0" />
+    <PackageReference Include="Npgsql" Version="4.1.0" />
+  </ItemGroup>
+
+</Project>

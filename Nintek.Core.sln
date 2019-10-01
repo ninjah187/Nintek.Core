@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nintek.Core.Events", "Ninte
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nintek.Core.Data", "Nintek.Core.Data\Nintek.Core.Data.csproj", "{26FD9656-FF7E-48FA-9663-13017C7C947F}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nintek.Core.Data.Npgsql", "Nintek.Core.Data.Npgsql\Nintek.Core.Data.Npgsql.csproj", "{FF3842D1-B48B-4771-A4E6-7F2FECC25A53}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{26FD9656-FF7E-48FA-9663-13017C7C947F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26FD9656-FF7E-48FA-9663-13017C7C947F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26FD9656-FF7E-48FA-9663-13017C7C947F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF3842D1-B48B-4771-A4E6-7F2FECC25A53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF3842D1-B48B-4771-A4E6-7F2FECC25A53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF3842D1-B48B-4771-A4E6-7F2FECC25A53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF3842D1-B48B-4771-A4E6-7F2FECC25A53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
