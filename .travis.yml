@@ -21,7 +21,7 @@ script:
   - if [ "$TRAVIS_BRANCH" = "release/events-handling" ]; then dotnet pack --configuration Release Nintek.Core.Events.Handling; fi
   - if [ "$TRAVIS_BRANCH" = "release/data" ]; then dotnet pack --configuration Release Nintek.Core.Data; fi
   - if [ "$TRAVIS_BRANCH" = "release/data-npgsql" ]; then dotnet pack --configuration Release Nintek.Core.Data.Npgsql; fi
-  - if [ "$TRAVIS_BRANCH" = "release/infrastructure" ]; then dotnet pack --configuration Release Nintek.Core.Data.Infrastructure; fi
+  - if [ "$TRAVIS_BRANCH" = "release/infrastructure" ]; then dotnet pack --configuration Release Nintek.Core.Infrastructure; fi
 deploy:
   - provider: script
     skip_cleanup: true
