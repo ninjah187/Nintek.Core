@@ -26,5 +26,10 @@ namespace Nintek.Core.Domain
         {
             yield return Id;
         }
+
+        public override string ToString()
+        {
+            return $"{GetType()} {Id}";
+        }
     }
 }
