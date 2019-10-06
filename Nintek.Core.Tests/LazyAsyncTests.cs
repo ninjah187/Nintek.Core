@@ -11,9 +11,9 @@ namespace Nintek.Core.Tests
         [Fact]
         public async Task CreatedWithConstructor_FromSyncSource_AwaitsCorrectValue()
         {
-            var lazy = new LazyAsync<int>(async () => 1);
+            LazyAsync<int> lazy = async () => 1;
 
-            var value = await lazy;
+            var value = await lazy();
 
             Assert.Equal(1, value);
         }
