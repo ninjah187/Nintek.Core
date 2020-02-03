@@ -18,17 +18,23 @@ namespace Nintek.Core.Gmail
         // ATTENTION: in case of bugs, try this scope first
         // static readonly string[] Scopes = { @"https://mail.google.com/" };
 
-        static readonly string[] Scopes = { GmailService.Scope.GmailSend };
+        static readonly string[] DefaultScopes = { GmailService.Scope.GmailSend };
 
         readonly string _applicationName;
         readonly string _serviceAccountEmail;
         readonly string _certificateFilePath;
+        readonly string[] _scopes;
 
-        public GmailServiceAccountMailSender(string applicationName, string serviceAccountEmail, string certificateFilePath)
+        public GmailServiceAccountMailSender(
+            string applicationName,
+            string serviceAccountEmail,
+            string certificateFilePath,
+            string[] scopes = null)
         {
             _applicationName = applicationName;
             _serviceAccountEmail = serviceAccountEmail;
             _certificateFilePath = certificateFilePath;
+            _scopes = scopes ?? DefaultScopes;
         }
 
         public async Task Send(
@@ -43,7 +49,7 @@ namespace Nintek.Core.Gmail
             var certificate = new X509Certificate2(_certificateFilePath, "notasecret", X509KeyStorageFlags.Exportable);
             var credential = new ServiceAccountCredential(new ServiceAccountCredential.Initializer(_serviceAccountEmail)
             {
-                Scopes = Scopes,
+                Scopes = _scopes,
                 User = fromAddress
             }.FromCertificate(certificate));
 
@@ -108,6 +114,5 @@ namespace Nintek.Core.Gmail
             public static ContentType Html { get; } = new ContentType("text/html");
             public static ContentType Plain { get; } = new ContentType("text/plain");
         }
-
     }
 }
