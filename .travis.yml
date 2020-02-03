@@ -8,6 +8,7 @@ branches:
   - release/data-dapper
   - release/data-npgsql
   - release/infrastructure
+  - release/gmail
 language: csharp
 solution: Nintek.Core.sln
 mono: none
@@ -22,6 +23,7 @@ script:
   - if [ "$TRAVIS_BRANCH" = "release/data" ]; then dotnet pack --configuration Release Nintek.Core.Data; fi
   - if [ "$TRAVIS_BRANCH" = "release/data-npgsql" ]; then dotnet pack --configuration Release Nintek.Core.Data.Npgsql; fi
   - if [ "$TRAVIS_BRANCH" = "release/infrastructure" ]; then dotnet pack --configuration Release Nintek.Core.Infrastructure; fi
+  - if [ "$TRAVIS_BRANCH" = "release/gmail" ]; then dotnet pack --configuration Release Nintek.Core.Gmail; fi
 deploy:
   - provider: script
     skip_cleanup: true
@@ -68,3 +70,8 @@ deploy:
     script: dotnet nuget push Nintek.Core.Infrastructure/bin/Release/*.nupkg --api-key $NUGET_API_KEY --source https://www.nuget.org/api/v2/package
     on:
       branch: release/infrastructure
+  - provider: script
+      skip_cleanup: true
+      script: dotnet nuget push Nintek.Core.Gmail/bin/Release/*.nupkg --api-key $NUGET_API_KEY --source https://www.nuget.org/api/v2/package
+      on:
+        branch: release/gmail
