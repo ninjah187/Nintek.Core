@@ -25,6 +25,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nintek.Core.Infrastructure"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nintek.Core.Domain.Tests", "Nintek.Core.Domain.Tests\Nintek.Core.Domain.Tests.csproj", "{462B40AB-F3FC-4E99-80C1-1E3FB0EA2FB2}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nintek.Core.Gmail", "Nintek.Core.Gmail\Nintek.Core.Gmail.csproj", "{7CFA1602-1649-4B5D-BEAC-AB6D70A3F7BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{462B40AB-F3FC-4E99-80C1-1E3FB0EA2FB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{462B40AB-F3FC-4E99-80C1-1E3FB0EA2FB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{462B40AB-F3FC-4E99-80C1-1E3FB0EA2FB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CFA1602-1649-4B5D-BEAC-AB6D70A3F7BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CFA1602-1649-4B5D-BEAC-AB6D70A3F7BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CFA1602-1649-4B5D-BEAC-AB6D70A3F7BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CFA1602-1649-4B5D-BEAC-AB6D70A3F7BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
