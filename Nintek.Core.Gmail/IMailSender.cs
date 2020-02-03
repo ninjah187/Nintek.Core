@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Nintek.Core.Gmail
 {
-    public interface IMailService
+    public interface IMailSender
     {
         Task Send(string fromAddress, string toRecipients, string subject, string body = "", bool isBodyHtml = false);
     }
