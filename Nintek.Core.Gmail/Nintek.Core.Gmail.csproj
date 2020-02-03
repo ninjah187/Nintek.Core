@@ -1,7 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>Nintek.Core.Gmail</PackageId>
+    <PackageVersion>0.1.0</PackageVersion>
+    <Authors>Karol Hinz</Authors>
+    <Description>C# building blocks for Domain Driven Design applications. Gmail API handling.</Description>
   </PropertyGroup>
 
   <ItemGroup>
