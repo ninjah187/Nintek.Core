@@ -10,7 +10,7 @@
 
   <ItemGroup>
     <PackageReference Include="Autofac" Version="4.9.4" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="Nintek.Core.Data.Dapper" Version="0.1.0" />
     <PackageReference Include="Nintek.Core.Data.Npgsql" Version="0.1.0" />
     <PackageReference Include="Nintek.Core.Events.Handling" Version="0.1.0" />
